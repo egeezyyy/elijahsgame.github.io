@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#main-chessboard, #spare-pawns-storage {
+    display: grid;
+    margin: 10px;
+}
+
+#main-chessboard {
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(8, 50px);
+}
+
+#spare-pawns-storage {
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: 50px;
+    gap: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.black {
+    background-color: #000;
+}
+
+.pawn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.highlight {
+    background-color: lightgreen;
+}
+
+.highlight-green {
+    background-color: lightgreen;
+}
+
+.highlight-red {
+    background-color: red;
+}
